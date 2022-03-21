@@ -1,0 +1,176 @@
+body {
+	background: url('./imgbackground.png') no-repeat;
+	background-size: cover;
+    height: 100%;
+	color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 2%;
+    box-shadow: 0 0 10px rgba(85, 75, 75, .7);
+    height: 2rem;
+    position: fixed;
+    top:0; left: 0; right: 0;
+    z-index: 1000;
+    background: white;
+}
+
+.header .logo img{
+    position: static;
+    float: left;
+}
+
+.header .navbar{
+    margin: 5rem;
+}
+
+.header .navbar a{
+    padding:0 1rem;
+    font-size: 1.2rem;
+    color: #006A95;
+    text-decoration: none;
+}
+
+.header .navbar a:hover{
+    color: #EE6C4D;
+    border-bottom: .1rem solid #EE6C4D;
+    padding-bottom: .5rem;
+    transition: .3s linear;
+} 
+
+.header p{
+    font-size: 2rem;
+    color: #006A95;
+}
+
+div{
+	background-color: white;
+    border: 1px solid black;
+    width: 600px;
+    height: fit-content;
+    margin: auto;
+    padding: 50px;
+    justify-content: center;
+    position: relative;
+    margin-top: 100px;
+}
+
+/* .registration-form {
+	position: absolute;
+	top: 60%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+} */
+
+
+.registration-form h2 {
+	font-size: 40px;
+	color: #006A95;
+	text-align: center;
+}
+
+.registration-form h3 {
+	font-size: 20px;
+	color: #006A95;
+	text-align: left;
+}
+
+.registration-form h4  {
+	font-size: 20px;
+	color: #006A95;
+	text-align: left;
+}
+
+.registration-form p {
+	font-size: 16px;
+	color: black;
+}
+
+.registration-form input {
+	font-size: 16px;
+	padding: 10px 10px;
+	margin: 5px 0;
+	width: 95%;
+	border: 1;
+	border-radius: 3px;
+	outline: none;
+}
+
+.registration-form button {
+    font-size: 16px;
+	color: white;
+	display: flex;
+	margin: auto;
+	padding: 10px 15px;
+	border: 1;
+	border-radius: 5px;
+	background-color:#006A95;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: black;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.registration-form button:hover {
+	color: red;
+}
